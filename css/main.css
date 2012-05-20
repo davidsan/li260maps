@@ -1,0 +1,50 @@
+html { height: 100% }
+body { height: 95%; margin:0; padding:0; background-color:#333; }
+#map_canvas { height: 90% }
+p { 
+	padding: 10px 30px 10px 30px;
+	margin: 0px;
+	font: bold 32px "Helvetica Neue",Arial,Sans-serif; 
+	color: #fff;
+	border-bottom: solid 1px #666;		
+}
+input[type="textbox"] {
+	background: url(search.png) no-repeat 10px 7px #333;
+	background-size:15px;
+	border: 0 none;
+	font: 16px Arial,Helvetica,Sans-serif;
+	color: #dedede;
+	min-width: 200px;
+	width:60%;		
+	margin: 0 0 5px 25px;
+	padding: 5px 10px 5px 30px;
+	
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+input[type="textbox"]:focus {
+	background-size:15px;
+	color: #efefef;
+	width: 60%;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 4px rgba(0, 0, 0, 0.7) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 4px rgba(0, 0, 0, 0.7) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 4px rgba(0, 0, 0, 0.7) inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+input[type="textbox"]:hover {
+	background-size:15px;
+	color: #efefef;
+	width: 60%;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3) inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
