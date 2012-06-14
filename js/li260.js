@@ -5,7 +5,7 @@ var geocoder;
 function initialize() {
     geocoder = new google.maps.Geocoder();
     var li260Styles = [{
-        elementType: "labels",
+        elementType: "all",
         stylers: [{
             visibility: "off"
         }]
