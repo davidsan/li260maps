@@ -17,7 +17,7 @@ function initialize() {
     }, {
         featureType: "landscape",
         stylers: [{
-            visibility: "off"
+            visibility: "simplified"
         }, {
             hue: "#00ff00"
         }, {
