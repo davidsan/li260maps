@@ -1,8 +1,11 @@
-li260maps
+LI260 Maps
 =========
 
 Google Maps adapté aux couleurs des circuits LI260
 
+![Aperçu](http://i.imgur.com/BQoW78C.png)
+
+[Demo](http://sandavid.github.io/li260maps/)
 
 ## Licence
 
