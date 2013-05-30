@@ -4,6 +4,12 @@ var geocoder;
 var paris = new google.maps.LatLng(48.856614,2.352222);
 google.maps.visualRefresh = true;
 
+// largeur_route : taille des routes
+// valeur : de 0 à 8
+// nb : pour obtenir une largeur de route proportionelle à la largeur réelle
+// de l'axe routier, il faut retirer weight dans le style.
+var largeur_route = 2;
+
 // initialisation du Style, de la carte, et affichage
 function initialize() {
     geocoder = new google.maps.Geocoder();
@@ -24,7 +30,7 @@ function initialize() {
         "stylers": [
           { "visibility": "on" },
           { "color": "#808080" },
-          { "weight": 2 }
+          { "weight": largeur_route }
         ]
       },{
         "featureType": "water",
