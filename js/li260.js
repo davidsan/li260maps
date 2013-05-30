@@ -1,95 +1,40 @@
 var map;
 var geocoder;
 
+var paris = new google.maps.LatLng(48.856614,2.352222);
+google.maps.visualRefresh = true;
+
 // initialisation du Style, de la carte, et affichage
 function initialize() {
     geocoder = new google.maps.Geocoder();
-    var li260Styles = [{
-        elementType: "all",
-        stylers: [{
-            visibility: "off"
-        }]
-    }, {
-        featureType: "administrative",
-        stylers: [{
-            visibility: "off"
-        }]
-    }, {
-        featureType: "landscape",
-        stylers: [{
-            visibility: "simplified"
-        }, {
-            hue: "#00ff00"
-        }, {
-            gamma: 0.01
-        }, {
-            lightness: 50
-        }, {
-            saturation: 100
-        }]
-    }, {
-        featureType: "poi",
-        stylers: [{
-            visibility: "off"
-        }]
-    }, {
-        featureType: "transit",
-        stylers: [{
-            visibility: "off"
-        }]
-    }, {
-        featureType: "water",
-        stylers: [{
-            visibility: "simplified"
-        }, {
-            hue: "#0000ff"
-        }, {
-            gamma: 0.01
-        }, {
-            lightness: 50
-        }, {
-            saturation: 100
-        }]
-    }, {
-        featureType: "road.highway",
-        stylers: [{
-            visibility: "simplified"
-        }, {
-            hue: "#808080"
-        }, {
-            saturation: -100
-        }, {
-            gamma: 0.01
-        }, {
-            lightness: 50
-        }]
-    }, {
-        featureType: "road.local",
-        stylers: [{
-            visibility: "simplified"
-        }, {
-            hue: "#808080"
-        }, {
-            invert_lightness: true
-        }, {
-            gamma: 0.01
-        }, {
-            lightness: 50
-        }]
-    }, {
-        featureType: "road.arterial",
-        stylers: [{
-            visibility: "simplified"
-        }, {
-            hue: "#808080"
-        }, {
-            saturation: -100
-        }, {
-            gamma: 0.01
-        }, {
-            lightness: 50
-        }]
-    }];
+    var li260Styles = [
+      {
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },{
+        "featureType": "landscape.natural",
+        "stylers": [
+          { "color": "#00ff00" },
+          { "visibility": "simplified" }
+        ]
+      },{
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#808080" },
+          { "weight": 2 }
+        ]
+      },{
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "visibility": "on" },
+          { "color": "#0000ff" }
+        ]
+      }
+    ];
     var styledMapOptions = {
         map: map,
         name: "li260.maps.MapTypeId.Circuit"
@@ -98,8 +43,8 @@ function initialize() {
         name: "LI260"
     });
     var mapOptions = {
-        center: new google.maps.LatLng(48.84653, 2.355194),
-        zoom: 15,
+        center: paris,
+        zoom: 7,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'li260_circuit']
         }
